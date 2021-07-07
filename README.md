@@ -6,7 +6,6 @@
 
 ![screenshot](https://user-images.githubusercontent.com/9049260/124786254-dbe7b680-df47-11eb-9c9e-d99dcfa5814b.png)
 
-
 In this project, we convert our application into a fully functional website.
 
 ## Built With
@@ -14,6 +13,10 @@ In this project, we convert our application into a fully functional website.
 - HTML
 - CSS
 - JavaScript
+
+## Live Link
+
+[Live link](https://usmansbk.github.io/awesome-books/)
 
 ## Authors
 
