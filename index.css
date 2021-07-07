@@ -49,16 +49,11 @@ input {
   align-self: center;
 }
 
-#books {
-  border-radius: 3px;
-  border-width: 1px;
-  border-style: solid;
-}
-
 .book-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 
 .book-item:nth-child(odd) {
