@@ -2,11 +2,12 @@
 
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
-> Awesome books: style core elements
+> Awesome books: a complete website with navigation
 
-![screen](https://user-images.githubusercontent.com/9049260/124728174-a6bf7200-df0f-11eb-966a-89ca187f0389.png)
+![screenshot](https://user-images.githubusercontent.com/9049260/124786254-dbe7b680-df47-11eb-9c9e-d99dcfa5814b.png)
 
-In this project, we built to the application to make it match the wireframe.
+
+In this project, we convert our application into a fully functional website.
 
 ## Built With
 

@@ -15,19 +15,53 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-      <h1 class="text-center mb-12">All awesome books</h1>
-      <ul id="books"></ul>
-      <div class="container">
-        <div class="divider my-12"></div>
+    <header>
+      <nav class="navbar">
+        <a class="navbar-brand" href="/"> Awesome Books </a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#list">List</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#new">Add new</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="date-container">
+        <p id="date"></p>
+      </div>
+      <section id="list" class="container current-page">
+        <h1 class="text-center">All awesome books</h1>
+        <ul id="books"></ul>
+      </section>
+      <section id="new" class="container page">
+        <h2 class="text-center">Add a new book</h2>
         <form id="book-entry">
-          <h2 class="text-center mb-12">Add a new book</h2>
           <input type="text" placeholder="Title" required />
           <input type="text" placeholder="Author" required />
           <div class="justify-right">
             <button class="button" type="submit">Add</button>
           </div>
         </form>
-      </div>
+      </section>
+      <section class="container contact" id="contact">
+         <h1>Contact information</h1>
+         <p>Do you have any question or you just want to say "Hello"?<br/> You can reach out to us</p>
+         <ul>
+           <li>Our e-mail mail@mail.com</li>
+           <li>Our phone number: 0043586534422</li>
+           <li>Our address: Streetname 22, 84503 City, Country</li>
+         </ul>
+      </section>
+    </main>
+    <footer>
+      <small>Copyright 2021</small>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.27.0/build/global/luxon.min.js"></script>
     <script src="index.js"></script>
+    <script src="navigation.js"></script>
   </body>
 </html>

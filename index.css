@@ -3,14 +3,35 @@
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 body {
-  padding: 12px;
+  padding: 0 12px;
+  position: relative;
+  background-color: #f4f5f7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+footer {
+  margin-top: auto;
+  margin-bottom: 12px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 16px;
 }
 
 li {
-  text-decoration: none;
   padding: 8px;
 }
 
@@ -29,6 +50,7 @@ input {
 }
 
 #books {
+  border-radius: 3px;
   border-width: 1px;
   border-style: solid;
 }
@@ -41,6 +63,10 @@ input {
 
 .book-item:nth-child(odd) {
   background-color: lightgrey;
+}
+
+.book-title {
+  font-weight: 500;
 }
 
 .button {
@@ -61,17 +87,58 @@ input {
   height: 32px;
 }
 
-.divider {
-  background-color: gray;
-  height: 1px;
-  margin: 40px 0;
-  width: 20%;
-  align-self: center;
+.container {
+  display: none;
 }
 
-.container {
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.navbar {
+  margin: 12px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  padding: 5px 24px;
+  background-color: white;
+  filter: drop-shadow(0 0 16px rgba(64, 83, 252, 0.24));
+  border-radius: 3px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: royalblue;
+}
+
+.navbar-nav {
+  display: flex;
+}
+
+.nav-item {
+  padding: 0 16px;
+  border-right: 1px solid royalblue;
+}
+
+.nav-item:last-child {
+  border: none;
+}
+
+.nav-link {
+  color: inherit;
+}
+
+.active {
+  color: royalblue;
+}
+
+.date-container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Align */
@@ -99,6 +166,22 @@ input {
 .my-20 {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.current-page {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 30px;
+  padding: 48px 0;
+}
+
+.contact {
+  align-items: center;
+}
+
+.contact ul li {
+  list-style-type: disc;
 }
 
 /* Large screen devices */
