@@ -130,12 +130,18 @@ bookStore.onUpdate(() => {
   bookStore.books.forEach(addBookToDOM);
 });
 
-window.addEventListener('load', () => {
+function showDateAndTime() {
   const { DateTime } = window.luxon;
   const now = DateTime.now();
-  setInterval(() => {
-    document.getElementById('date').innerText = now.toLocaleString(DateTime.DATETIME_MED);
-  }, 1000);
+  document.getElementById('date').innerText = now.toLocaleString(DateTime.DATETIME_MED);
 
+  setInterval(() => {
+    const now = DateTime.now();
+    document.getElementById('date').innerText = now.toLocaleString(DateTime.DATETIME_MED);
+  }, 60000);
+}
+
+window.addEventListener('load', () => {
+  showDateAndTime();
   bookStore.loadBooks();
 });
