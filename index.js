@@ -131,8 +131,7 @@ bookStore.onUpdate(() => {
 });
 
 window.addEventListener('load', () => {
-  // eslint-disable-next-line no-undef
-  const { DateTime } = luxon;
+  const { DateTime } = window.luxon;
   const now = DateTime.now();
   document.getElementById('date').innerText = now.toLocaleString(DateTime.DATETIME_MED);
 
