@@ -133,7 +133,9 @@ bookStore.onUpdate(() => {
 window.addEventListener('load', () => {
   const { DateTime } = window.luxon;
   const now = DateTime.now();
-  document.getElementById('date').innerText = now.toLocaleString(DateTime.DATETIME_MED);
+  setInterval(() => {
+    document.getElementById('date').innerText = now.toLocaleString(DateTime.DATETIME_MED);
+  }, 1000);
 
   bookStore.loadBooks();
 });
